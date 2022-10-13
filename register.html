@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div id="container"></div>
+
+    <div id="form">
+        <form id="myForm" action="/">
+            <div class="input-control">
+                <label for="id">Id</label>
+                <input type="text" id="uniqId" name="uniqId" placeholder="Enter Id">
+            </div>
+            <div class="input-control">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter Name">
+            </div>
+            <div class="input-control">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" placeholder="Enter Age">
+            </div>
+            <div id="radio-button">
+                <label for="employee">Employee</label>
+                <input type="radio" value="employee" id="employee" name="designation"> <br>
+                <label for="student">Student</label>
+                <input type="radio" value="student" id="student" name="designation">
+            </div>
+            <div class="input-control">
+                <label for="priority">Priority</label>
+                <Select>
+                    <option value="p0">P0</option>
+                    <option value="p1">P1</option>
+                    <option value="p2">P2</option>
+                    <option value="p3">P3</option>
+                </Select>
+            </div>
+            <div class="input-control">
+                <label for="vaccine">Vaccine</label>
+                <Select>
+                    <option value="covishield">Covishield</option>
+                    <option value="covaxin">Covaxin</option>
+                    <option value="sputnik">Sputnik</option>
+                </Select>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
+
+<script type="module">
+    import navbar from './navbar.js';
+
+    let container = document.getElementById('container');
+
+    container.innerHTML = navbar();
+</script>

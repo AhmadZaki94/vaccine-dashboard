@@ -1,0 +1,24 @@
+body{
+    background-color: #DFF6FF;
+    margin: 0px;
+}
+#container {
+    width: 100%;
+    height: 75px;   
+    background-color: #47B5FF;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navText{
+    margin: auto;
+}
+
+.anchorNav{
+    text-decoration: none;
+    color: #06283D;
+}
